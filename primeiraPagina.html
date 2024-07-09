@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="primeiraPagina.css">
+    <link rel="shortcut icon" href="faviconPrimeiraPagina.png" type="image/x-icon">
+    <script src="formulario.js"></script>
+    <title>Projeto Formulário</title>
+</head>
+
+<body>
+
+    <!-- Área do Formulário -->
+    <div class="conteiner">
+        
+        <!-- Cabeça do site -->
+        <header class="cabecario">
+
+            <h1>Cadastro de Perfil</h1>
+            <img class="logoOutback" src="https://1.bp.blogspot.com/-CVnkIRDUo70/Ws1SlqjX4qI/AAAAAAABqBQ/oBg2BaIfs98YSDVCdrawr_OvD7GU4E2IwCLcBGAs/s1600/out%2Blogo.jpg" alt="logo Outback">
+            <h3>Preencha os campos abaixo:</h3>
+
+        </header>
+
+        <!-- Corpo do site -->
+        <main class="corpo">
+
+            <section class="section1">
+
+                <!-- Informações de Texto -->
+                <div class="labeltext">
+                    <label class="alignSection1"><strong>Usuário: </strong></label>
+                    <input type="text" id="nomeUser" name="nomeUser" placeholder="Digite seu usuário">
+                </div>
+
+                <div class="labeltext">
+                    <label class="alignSection1"><strong>CPF: </strong></label>
+                    <input type="number" id="cpf" name="cpf" placeholder="Digite seu CPF">
+                </div>
+
+                <div class="labeltext">
+                    <label class="alignSection1"><strong>Email: </strong></label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email">
+                </div>
+
+                <div class="labeltext">
+                    <label class="alignSection1"><strong>Senha: </strong></label>
+                    <input type="password" id="password" name="password" placeholder="Digite uma nova senha aqui">
+                </div>
+
+                <div class="labeltext">
+                    <label class="alignSection1"><strong>Digite novamente a senha: </strong></label>
+                    <input type="password" id="passwordConfirmar" name="passwordConfirmar" placeholder="Digite novamente aqui">
+                </div>
+
+            </section>
+            
+            <!-- Seleções -->
+            <section class="section2">
+
+                <!-- Radio -->
+                <div class="labelgenero">
+                    <p><strong>Qual o seu gênero?</strong></p>
+
+                    <input required type="radio" class="custom-checkbox" name="genero"  value="Masculino">
+                    <label for="genero">Masculino</label>
+
+                    <input type="radio" class="custom-checkbox" name="genero" value="Feminino">
+                    <label for="genero">Feminino</label>
+            
+                    <input type="radio" class="custom-checkbox" name="genero" value="Prefiro não identificar">
+                    <label for="genero">Prefiro não identificar</label>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="Checkbox">
+                    <div class="labelcheckbox">
+                        <input required  type="checkbox" class="custom-checkbox" name="confirmarDados">
+                        <label for="confirmarDados"><strong>Confirmo os dados do cadastro</strong></label>
+                    </div>
+
+                    <div class="labelcheckbox">
+                        <input required type="checkbox" class="custom-checkbox" name="termos">
+                        <label for="termos"><strong>Concordo com os termos. </strong><a target="_blank" href="https://www.youtube.com/watch?v=zL19uMsnpSU&t=2s"> Ler termos</a> </label>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Botão -->
+            <button type="button" onclick="enviarInformacoes()" class="botao">Continuar</button>
+            
+
+        </main>
+
+    </div>
+</body>
+</html>

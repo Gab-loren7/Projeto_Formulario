@@ -1,0 +1,145 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    background-image: url("bgPrimeiraPagina.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.conteiner{
+    background-color: white;
+    border: 4px solid #400319;
+    border-radius: 5%;
+
+    max-width: 40%;
+    padding: 1%;
+    margin: auto;
+    margin-top: 30px;
+
+    box-shadow: 8px 8px 15px #131313;
+}
+
+header, main{
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 26px;
+    color: #000;
+}
+
+h3{
+    font-size: 18px;
+    color: #000;
+}
+
+header img{
+    width: 30%;
+    padding: 5%;
+}
+
+.section1, .section2{
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    display: block;
+
+    width: 50%;
+    padding: 1%;
+    margin-bottom: -1%;
+
+    font-size: 13px;
+}
+
+.labeltext{
+    padding: 1%;
+}
+
+.alignSection1{
+    display: block;
+    margin: 5px;
+}
+
+.labelgenero{
+    display: block;
+    margin: auto;
+
+    padding: 1%;
+    max-width: 45%;
+    margin-bottom: 10px;
+}
+
+.labelcheckbox{
+    display: block;
+    margin: auto;
+
+    padding: 2%;
+    width: 70%;
+}
+
+input{
+    border: 2px solid #C41001;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: #000000;
+}
+
+.custom-checkbox {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    background-color: #C41001;
+    border-color: #000;
+}
+
+
+input:hover{
+    color: #000000;
+}
+
+label a{
+    color: #C41001;
+}
+
+label a:hover{
+    color: blue;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+.botao{
+    margin-top: 3%;
+    padding: 2% 5%;
+
+    background-color: #C41001;
+    color: white;
+    cursor: pointer;
+
+    border: 3px solid black;
+    border-radius: 20px;
+
+    transition: 0.5s;
+}
+
+.botao:hover{
+    
+    background-color: black;
+    color: white;
+    border: 3px solid #C41001;
+    
+}
